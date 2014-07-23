@@ -7,7 +7,6 @@
 
 #include "gameui2_frame.h"
 #include "gameui2_mainmenu.h"
-#include "gameui2_loading.h"
 
 #include "ienginevgui.h"
 
