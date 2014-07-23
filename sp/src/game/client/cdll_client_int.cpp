@@ -169,6 +169,10 @@ extern vgui::IInputInternal *g_InputInternal;
 #include "sixense/in_sixense.h"
 #endif
 
+#if defined( OPEN_GUI )
+#include "gameui2_frame.h"
+#endif // OPEN_GUI
+
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
@@ -1152,6 +1156,10 @@ void CHLClient::PostInit()
 		}
 	}
 #endif
+
+#if defined( OPEN_GUI )
+	CGameUI2_Frame::Create();
+#endif // OPEN_GUI
 }
 
 //-----------------------------------------------------------------------------

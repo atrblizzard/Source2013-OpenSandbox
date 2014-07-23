@@ -1,0 +1,58 @@
+Root
+{
+	"align"				"bottom left" // top bottom center left right
+	"label-align"		"left" // left center right
+	"width"				"340"
+	"height"			"40"
+
+	MainMenu
+	{
+		Button
+		{
+			"label"		"#GameUI2_SinglePlayer"
+			"command"	"action_singleplayer"
+			"order"		"4"
+		}
+	}
+
+	PauseMenu
+	{
+		Button
+		{
+			"label"		"#GameUI2_ResumeGame"
+			"command"	"action_resumegame"
+			"order"		"5"
+		}
+
+		Button
+		{
+			"label"		"#GameUI2_SaveGame"
+			"command"	"action_savegame"
+			"order"		"4"
+		}
+	}
+
+	SharedMenu
+	{
+		Button
+		{
+			"label"		"#GameUI2_LoadGame"
+			"command"	"action_loadgame"
+			"order"		"3"
+		}
+
+		Button
+		{
+			"label"		"#GameUI2_Options"
+			"command"	"action_options"
+			"order"		"2"
+		}
+
+		Button
+		{
+			"label"		"#GameUI2_Quit"
+			"command"	"action_quitgame"
+			"order"		"1"
+		}
+	}
+}
