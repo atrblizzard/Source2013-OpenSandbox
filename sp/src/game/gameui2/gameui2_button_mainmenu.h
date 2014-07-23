@@ -3,6 +3,13 @@
   // Purpose:	Open Source GameUI for Source Engine.
  //				
 // ======================================================================================== //
+#if !defined( GAMEUI2_BUTTON_MAINMENU_H )
+#define GAMEUI2_BUTTON_MAINMENU_H
+
+#if defined( _WIN32 )
+#pragma once
+#endif // _WIN32
+
 #include "vgui_controls/Button.h"
 #include "gameui2_surface.h"
 
@@ -52,3 +59,4 @@ private:
 	static int 			button_height;
 	int					priority;
 };
+#endif // GAMEUI2_BUTTON_MAINMENU_H

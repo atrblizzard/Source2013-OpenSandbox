@@ -3,6 +3,13 @@
   // Purpose:	Open Source GameUI for Source Engine.
  //				
 // ======================================================================================== //
+#if !defined( GAMEUI2_SURFACE_H )
+#define GAMEUI2_SURFACE_H
+
+#if defined( _WIN32 )
+#pragma once
+#endif // _WIN32
+
 #include "vgui_controls/Frame.h"
 
   //---------------------------------------------------------------------------
@@ -69,3 +76,4 @@ public:
 		return s_pInstance;
 	}
 };
+#endif // GAMEUI2_SURFACE_H
