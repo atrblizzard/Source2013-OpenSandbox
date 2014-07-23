@@ -3,6 +3,13 @@
   // Purpose:	Open Source GameUI for Source Engine.
  //				
 // ======================================================================================== //
+#if !defined( GAMEUI2_MAINMENU_H )
+#define GAMEUI2_MAINMENU_H
+
+#if defined( _WIN32 )
+#pragma once
+#endif // _WIN32
+
 #include "vgui_controls/Frame.h"
 #include "gameui2_button_mainmenu.h"
 #include "chunk/menu_parser.h"
@@ -54,3 +61,4 @@ class CGameUI2_Post_Frame : public vgui::Panel
 public:
 						CGameUI2_Post_Frame( CGameUI2_MainMenu *pPanel, vgui::Panel *parent );
 };
+#endif // GAMEUI2_MAINMENU_H

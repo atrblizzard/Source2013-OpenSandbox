@@ -3,6 +3,13 @@
   // Purpose:	Open Source GameUI for Source Engine.
  //				
 // ======================================================================================== //
+#if !defined( GAMEUI2_FRAME_H )
+#define GAMEUI2_FRAME_H
+
+#if defined( _WIN32 )
+#pragma once
+#endif // _WIN32
+
 #include "vgui_controls/Panel.h"
 #include "GameUI/IGameUI.h"
 
@@ -43,3 +50,4 @@ private:
 };
 
 extern CGameUI2_Frame *GetGUI2Frame();
+#endif // GAMEUI2_FRAME_H
