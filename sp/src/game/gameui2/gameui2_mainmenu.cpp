@@ -32,7 +32,7 @@ CGameUI2_MainMenu::CGameUI2_MainMenu( vgui::Panel *parent ) : BaseClass( NULL, "
 	Activate();
 
 	// Small hack.
-	SetMinimumSize( 0, 0 );
+	// SetMinimumSize( 0, 0 );
 	
 	std::string filename = "/interface/scripts/mainmenu.gui2";
 	std::stringstream filepath;
@@ -392,7 +392,7 @@ void CGameUI2_MainMenu::OnKillFocus()
 CGameUI2_Post_Frame::CGameUI2_Post_Frame( CGameUI2_MainMenu *pPanel, vgui::Panel *parent ) : BaseClass( parent )
 {
 	// Small hack.
-	SetMinimumSize( 0, 0 );
+	// SetMinimumSize( 0, 0 );
 	
 	pPanel->SetParent( this );
 	pPanel->MakeReadyForUse();

@@ -40,7 +40,7 @@ CGameUI2_Frame::CGameUI2_Frame( vgui::VPANEL parent ) : BaseClass( NULL )
 	SetVisible( false );
 
 	// Small hack.
-	SetMinimumSize( 0, 0 );
+	// SetMinimumSize( 0, 0 );
 
 	/// NOTE: This is background music
 	/// You can set it inside the "scripts/game_sounds_interface.txt"
